@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelSense AI Vision</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        .btn {
+                font-size: 1.7em;
+                padding: 20px 35px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">🔍 <strong>PixelSense</strong></div>
+        </header>
+        <main>
+            <section class="hero">
+                <h1 class="fade-in">AI-powered vision</h1>
+                <h2 class="slide-up">Analyze, detect, and discover <em>instantly!</em></h2>
+                <div class="card scale-up">
+                    <h3>Analyze Your Images <br> with AI</h3>
+                    <input type="file" id="fileInput" class="hidden">
+                    <button id="chooseBtn" class="btn choose-btn">
+                        <i class="fas fa-image"></i> Choose an Image
+                    </button>
+                    <button id="analyzeBtn" class="btn analyze-btn">
+                        <i class="fas fa-search"></i> Analyze Image
+                    </button>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="info">
+                    <h3>About PixelSense</h3>
+                    <p>This tool uses <strong>AWS Rekognition</strong> to detect objects, faces, and text in images with advanced AI capabilities.</p>
+                    <p>Upload any image, and our AI will analyze it in seconds, providing detailed insights about its contents!</p>
+                </div>
+                <div class="how-to">
+                    <h3>How It Works</h3>
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-icon"><i class="fas fa-upload"></i></div>
+                            <h4>Step 1: Upload</h4>
+                            <p>Click the "Choose an Image" button to select your image file</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon"><i class="fas fa-cogs"></i></div>
+                            <h4>Step 2: Process</h4>
+                            <p>Click "Analyze Image" to start the AI analysis process</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h4>Step 3: Results</h4>
+                            <p>View detailed analysis including objects, faces, and text detection</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
